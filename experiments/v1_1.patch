@@ -1,0 +1,15 @@
+Two one-line fixes applied to DIC-3 (v1.0) to obtain v1.1.
+Apply by hand inside a DIC-3 checkout (summary diff, not a git-apply patch).
+
+--- a/tools/docgen.py
++++ b/tools/docgen.py
+@@ fix 1: valuation / cost values are floats; ":,d" raises ValueError @@
+-  {...:,d}
++  {...:,.0f}
+   (every occurrence of ":,d}" in tools/docgen.py -> ":,.0f}", 6 places)
+
+--- a/agent/management_agent.py
++++ b/agent/management_agent.py
+@@ fix 2: disposal gate must allow ONLY assets whose advice is DISPOSE @@
+-        if val["advice"] == "KEEP_USING":
++        if val["advice"] != "DISPOSE":

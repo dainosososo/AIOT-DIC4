@@ -1,0 +1,27 @@
+schema: spec-driven
+
+context: |
+  專案：DIC4 — 將 DIC-3 期末專題 LabSteward（實驗室財產管理與合規採購 AI Agent）
+  撰寫成 IEEE 會議論文初稿（目標 ICEIB 2027，英文、4–8 頁、IEEEtran conference 樣板，於 Overleaf 編譯）。
+  所有 OpenSpec 文件以繁體中文（zh-TW）撰寫；OpenSpec 標題與 SHALL/MUST 關鍵字保持英文。
+  論文依 2020 A-Z SOP 撰寫：Abstract A–F、Introduction G–L、Related Work M–O、
+  Proposed Design PA–PM、Experiment Q–V、Conclusion W–Z。
+  每個章節由一個 change 管理，命名為 00N_xxxxx（三位數、遞增）。
+  main.tex 每一段落必須帶有 "% [A2Z:<code>]" 註解，由 iceib-paper/check_a2z.py 檢查。
+  領域事實唯一來源：DIC-3 repo（https://github.com/dainosososo/DIC-3）。
+  實驗數字唯一來源：experiments/results_real_eval*.json（由 experiments/run_real_eval.py 實際執行產生）。
+  禁止捏造數字；DIC-3/eval/run_eval.py 內寫死的數字不得引用；未量測者一律寫 \TBD。
+  寫作流程使用 MCP：Claude Code（MCP host）透過 GitHub 與檔案工具產生並推送文件，Overleaf 由 GitHub 匯入或上傳 zip 同步。
+
+rules:
+  proposal:
+    - 必須寫明本 change 涵蓋的 A2Z 字母範圍
+    - 數字必須能追溯到 DIC-3 原始碼或 experiments/ 量測結果
+  specs:
+    - 每個 Requirement 必須對應至少一個 A2Z 代碼
+  design:
+    - 每個寫作決策必須追溯到 A2Z 項目或量測結果
+  tasks:
+    - 必須包含執行 check_a2z.py
+    - 必須包含 main.tex 與 main.txt 一致性檢查
+    - 必須包含「無捏造數字」檢查

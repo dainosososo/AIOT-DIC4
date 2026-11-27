@@ -1,0 +1,2555 @@
+{
+  "fresh/strict": {
+    "summary": {
+      "n": 50,
+      "success_rate": 40.0,
+      "management": 60.0,
+      "procurement": 20.0,
+      "by_type": {
+        "lend": 100.0,
+        "lend_conflict": 100.0,
+        "valuation": 100.0,
+        "disposal_check": 0.0,
+        "disposal_draft": 0.0,
+        "precheck_inventory": 100.0,
+        "small_purchase": 0.0,
+        "split_order": 0.0,
+        "tender": 0.0,
+        "vendor_quotes": 0.0
+      },
+      "violation_leak_rate": 0.0,
+      "duplicate_purchase_rate": 0.0,
+      "latency_ms_median": 8.57,
+      "latency_ms_p95": 15.07,
+      "failures": [
+        [
+          "M04",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M05",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M09",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M10",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M14",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M15",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M19",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M20",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M24",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M25",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "P02",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P03",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P04",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P05",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P07",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P08",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P09",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P10",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P12",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P13",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P14",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P15",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P17",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P18",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P19",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P20",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P22",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P23",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P24",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P25",
+          "SUCCESS",
+          "ERROR"
+        ]
+      ]
+    },
+    "rows": [
+      {
+        "task_id": "M01",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 15.43
+      },
+      {
+        "task_id": "M02",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 8.58
+      },
+      {
+        "task_id": "M03",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 20.07
+      },
+      {
+        "task_id": "M04",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.65
+      },
+      {
+        "task_id": "M05",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.1
+      },
+      {
+        "task_id": "M06",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 14.71
+      },
+      {
+        "task_id": "M07",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 9.07
+      },
+      {
+        "task_id": "M08",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 9.14
+      },
+      {
+        "task_id": "M09",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.57
+      },
+      {
+        "task_id": "M10",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.08
+      },
+      {
+        "task_id": "M11",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 13.98
+      },
+      {
+        "task_id": "M12",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 8.38
+      },
+      {
+        "task_id": "M13",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 8.94
+      },
+      {
+        "task_id": "M14",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.47
+      },
+      {
+        "task_id": "M15",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.31
+      },
+      {
+        "task_id": "M16",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 15.57
+      },
+      {
+        "task_id": "M17",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 8.77
+      },
+      {
+        "task_id": "M18",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 9.19
+      },
+      {
+        "task_id": "M19",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.23
+      },
+      {
+        "task_id": "M20",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.45
+      },
+      {
+        "task_id": "M21",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 15.07
+      },
+      {
+        "task_id": "M22",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 8.15
+      },
+      {
+        "task_id": "M23",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 9.54
+      },
+      {
+        "task_id": "M24",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.35
+      },
+      {
+        "task_id": "M25",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.56
+      },
+      {
+        "task_id": "P01",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 8.52
+      },
+      {
+        "task_id": "P02",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.59
+      },
+      {
+        "task_id": "P03",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.07
+      },
+      {
+        "task_id": "P04",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.88
+      },
+      {
+        "task_id": "P05",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.67
+      },
+      {
+        "task_id": "P06",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 9.11
+      },
+      {
+        "task_id": "P07",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.74
+      },
+      {
+        "task_id": "P08",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.65
+      },
+      {
+        "task_id": "P09",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.76
+      },
+      {
+        "task_id": "P10",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.0
+      },
+      {
+        "task_id": "P11",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 8.18
+      },
+      {
+        "task_id": "P12",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.28
+      },
+      {
+        "task_id": "P13",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.54
+      },
+      {
+        "task_id": "P14",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.44
+      },
+      {
+        "task_id": "P15",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.55
+      },
+      {
+        "task_id": "P16",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 8.63
+      },
+      {
+        "task_id": "P17",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.44
+      },
+      {
+        "task_id": "P18",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.17
+      },
+      {
+        "task_id": "P19",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.51
+      },
+      {
+        "task_id": "P20",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.59
+      },
+      {
+        "task_id": "P21",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 8.33
+      },
+      {
+        "task_id": "P22",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.18
+      },
+      {
+        "task_id": "P23",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.99
+      },
+      {
+        "task_id": "P24",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.53
+      },
+      {
+        "task_id": "P25",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.5
+      }
+    ]
+  },
+  "fresh/with-history": {
+    "summary": {
+      "n": 50,
+      "success_rate": 40.0,
+      "management": 60.0,
+      "procurement": 20.0,
+      "by_type": {
+        "lend": 100.0,
+        "lend_conflict": 100.0,
+        "valuation": 100.0,
+        "disposal_check": 0.0,
+        "disposal_draft": 0.0,
+        "precheck_inventory": 100.0,
+        "small_purchase": 0.0,
+        "split_order": 0.0,
+        "tender": 0.0,
+        "vendor_quotes": 0.0
+      },
+      "violation_leak_rate": 0.0,
+      "duplicate_purchase_rate": 0.0,
+      "latency_ms_median": 8.66,
+      "latency_ms_p95": 13.87,
+      "failures": [
+        [
+          "M04",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M05",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M09",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M10",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M14",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M15",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M19",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M20",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M24",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M25",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "P02",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P03",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P04",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P05",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P07",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P08",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P09",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P10",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P12",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P13",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P14",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P15",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P17",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P18",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P19",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P20",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P22",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P23",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P24",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P25",
+          "SUCCESS",
+          "ERROR"
+        ]
+      ]
+    },
+    "rows": [
+      {
+        "task_id": "M01",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 15.58
+      },
+      {
+        "task_id": "M02",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 8.65
+      },
+      {
+        "task_id": "M03",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 9.95
+      },
+      {
+        "task_id": "M04",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.56
+      },
+      {
+        "task_id": "M05",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.66
+      },
+      {
+        "task_id": "M06",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 13.86
+      },
+      {
+        "task_id": "M07",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 8.54
+      },
+      {
+        "task_id": "M08",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 9.35
+      },
+      {
+        "task_id": "M09",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.52
+      },
+      {
+        "task_id": "M10",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.17
+      },
+      {
+        "task_id": "M11",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 14.19
+      },
+      {
+        "task_id": "M12",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 8.2
+      },
+      {
+        "task_id": "M13",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 8.87
+      },
+      {
+        "task_id": "M14",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.23
+      },
+      {
+        "task_id": "M15",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.11
+      },
+      {
+        "task_id": "M16",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 14.79
+      },
+      {
+        "task_id": "M17",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 8.0
+      },
+      {
+        "task_id": "M18",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 9.3
+      },
+      {
+        "task_id": "M19",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.15
+      },
+      {
+        "task_id": "M20",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.49
+      },
+      {
+        "task_id": "M21",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 13.87
+      },
+      {
+        "task_id": "M22",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 8.31
+      },
+      {
+        "task_id": "M23",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 8.92
+      },
+      {
+        "task_id": "M24",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.45
+      },
+      {
+        "task_id": "M25",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.28
+      },
+      {
+        "task_id": "P01",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 8.19
+      },
+      {
+        "task_id": "P02",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.08
+      },
+      {
+        "task_id": "P03",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.95
+      },
+      {
+        "task_id": "P04",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.4
+      },
+      {
+        "task_id": "P05",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.1
+      },
+      {
+        "task_id": "P06",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 9.0
+      },
+      {
+        "task_id": "P07",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.68
+      },
+      {
+        "task_id": "P08",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.61
+      },
+      {
+        "task_id": "P09",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.63
+      },
+      {
+        "task_id": "P10",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.2
+      },
+      {
+        "task_id": "P11",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 9.67
+      },
+      {
+        "task_id": "P12",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.11
+      },
+      {
+        "task_id": "P13",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.06
+      },
+      {
+        "task_id": "P14",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.97
+      },
+      {
+        "task_id": "P15",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.62
+      },
+      {
+        "task_id": "P16",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 8.44
+      },
+      {
+        "task_id": "P17",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.5
+      },
+      {
+        "task_id": "P18",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.32
+      },
+      {
+        "task_id": "P19",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.94
+      },
+      {
+        "task_id": "P20",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.51
+      },
+      {
+        "task_id": "P21",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 9.68
+      },
+      {
+        "task_id": "P22",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.38
+      },
+      {
+        "task_id": "P23",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 10.06
+      },
+      {
+        "task_id": "P24",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.98
+      },
+      {
+        "task_id": "P25",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.76
+      }
+    ]
+  },
+  "seq/strict": {
+    "summary": {
+      "n": 50,
+      "success_rate": 32.0,
+      "management": 44.0,
+      "procurement": 20.0,
+      "by_type": {
+        "lend": 20.0,
+        "lend_conflict": 100.0,
+        "valuation": 100.0,
+        "disposal_check": 0.0,
+        "disposal_draft": 0.0,
+        "precheck_inventory": 100.0,
+        "small_purchase": 0.0,
+        "split_order": 0.0,
+        "tender": 0.0,
+        "vendor_quotes": 0.0
+      },
+      "violation_leak_rate": 0.0,
+      "duplicate_purchase_rate": 0.0,
+      "latency_ms_median": 8.75,
+      "latency_ms_p95": 9.97,
+      "failures": [
+        [
+          "M04",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M05",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M06",
+          "SUCCESS",
+          "REJECTED"
+        ],
+        [
+          "M09",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M10",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M11",
+          "SUCCESS",
+          "REJECTED"
+        ],
+        [
+          "M14",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M15",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M16",
+          "SUCCESS",
+          "REJECTED"
+        ],
+        [
+          "M19",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M20",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M21",
+          "SUCCESS",
+          "REJECTED"
+        ],
+        [
+          "M24",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M25",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "P02",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P03",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P04",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P05",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P07",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P08",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P09",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P10",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P12",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P13",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P14",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P15",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P17",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P18",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P19",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P20",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P22",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P23",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P24",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P25",
+          "SUCCESS",
+          "ERROR"
+        ]
+      ]
+    },
+    "rows": [
+      {
+        "task_id": "M01",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 15.38
+      },
+      {
+        "task_id": "M02",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 9.03
+      },
+      {
+        "task_id": "M03",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 12.39
+      },
+      {
+        "task_id": "M04",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 5.81
+      },
+      {
+        "task_id": "M05",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 5.2
+      },
+      {
+        "task_id": "M06",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "REJECTED",
+        "ok": false,
+        "latency_ms": 8.58
+      },
+      {
+        "task_id": "M07",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 9.16
+      },
+      {
+        "task_id": "M08",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 11.13
+      },
+      {
+        "task_id": "M09",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 5.0
+      },
+      {
+        "task_id": "M10",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.28
+      },
+      {
+        "task_id": "M11",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "REJECTED",
+        "ok": false,
+        "latency_ms": 8.62
+      },
+      {
+        "task_id": "M12",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 9.12
+      },
+      {
+        "task_id": "M13",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 9.97
+      },
+      {
+        "task_id": "M14",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.51
+      },
+      {
+        "task_id": "M15",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.07
+      },
+      {
+        "task_id": "M16",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "REJECTED",
+        "ok": false,
+        "latency_ms": 9.25
+      },
+      {
+        "task_id": "M17",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 9.37
+      },
+      {
+        "task_id": "M18",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 9.29
+      },
+      {
+        "task_id": "M19",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.33
+      },
+      {
+        "task_id": "M20",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.47
+      },
+      {
+        "task_id": "M21",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "REJECTED",
+        "ok": false,
+        "latency_ms": 8.59
+      },
+      {
+        "task_id": "M22",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 8.69
+      },
+      {
+        "task_id": "M23",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 9.92
+      },
+      {
+        "task_id": "M24",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.26
+      },
+      {
+        "task_id": "M25",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.06
+      },
+      {
+        "task_id": "P01",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 9.12
+      },
+      {
+        "task_id": "P02",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.71
+      },
+      {
+        "task_id": "P03",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.46
+      },
+      {
+        "task_id": "P04",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.91
+      },
+      {
+        "task_id": "P05",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.57
+      },
+      {
+        "task_id": "P06",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 9.34
+      },
+      {
+        "task_id": "P07",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.34
+      },
+      {
+        "task_id": "P08",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.74
+      },
+      {
+        "task_id": "P09",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.67
+      },
+      {
+        "task_id": "P10",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.1
+      },
+      {
+        "task_id": "P11",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 8.45
+      },
+      {
+        "task_id": "P12",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.73
+      },
+      {
+        "task_id": "P13",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.37
+      },
+      {
+        "task_id": "P14",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.37
+      },
+      {
+        "task_id": "P15",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.94
+      },
+      {
+        "task_id": "P16",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 9.84
+      },
+      {
+        "task_id": "P17",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.89
+      },
+      {
+        "task_id": "P18",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.5
+      },
+      {
+        "task_id": "P19",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.69
+      },
+      {
+        "task_id": "P20",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.77
+      },
+      {
+        "task_id": "P21",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 8.61
+      },
+      {
+        "task_id": "P22",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.32
+      },
+      {
+        "task_id": "P23",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.63
+      },
+      {
+        "task_id": "P24",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.56
+      },
+      {
+        "task_id": "P25",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.45
+      }
+    ]
+  },
+  "seq/with-history": {
+    "summary": {
+      "n": 50,
+      "success_rate": 32.0,
+      "management": 44.0,
+      "procurement": 20.0,
+      "by_type": {
+        "lend": 20.0,
+        "lend_conflict": 100.0,
+        "valuation": 100.0,
+        "disposal_check": 0.0,
+        "disposal_draft": 0.0,
+        "precheck_inventory": 100.0,
+        "small_purchase": 0.0,
+        "split_order": 0.0,
+        "tender": 0.0,
+        "vendor_quotes": 0.0
+      },
+      "violation_leak_rate": 0.0,
+      "duplicate_purchase_rate": 0.0,
+      "latency_ms_median": 8.77,
+      "latency_ms_p95": 10.32,
+      "failures": [
+        [
+          "M04",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M05",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M06",
+          "SUCCESS",
+          "REJECTED"
+        ],
+        [
+          "M09",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M10",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M11",
+          "SUCCESS",
+          "REJECTED"
+        ],
+        [
+          "M14",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M15",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M16",
+          "SUCCESS",
+          "REJECTED"
+        ],
+        [
+          "M19",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M20",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M21",
+          "SUCCESS",
+          "REJECTED"
+        ],
+        [
+          "M24",
+          "GUARDRAIL_BLOCKED",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "M25",
+          "SUCCESS",
+          "EXCEPTION:ValueError"
+        ],
+        [
+          "P02",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P03",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P04",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P05",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P07",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P08",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P09",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P10",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P12",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P13",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P14",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P15",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P17",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P18",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P19",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P20",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P22",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P23",
+          "GUARDRAIL_VIOLATION",
+          "ERROR"
+        ],
+        [
+          "P24",
+          "SUCCESS",
+          "ERROR"
+        ],
+        [
+          "P25",
+          "SUCCESS",
+          "ERROR"
+        ]
+      ]
+    },
+    "rows": [
+      {
+        "task_id": "M01",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 14.95
+      },
+      {
+        "task_id": "M02",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 9.12
+      },
+      {
+        "task_id": "M03",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 9.98
+      },
+      {
+        "task_id": "M04",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.51
+      },
+      {
+        "task_id": "M05",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.06
+      },
+      {
+        "task_id": "M06",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "REJECTED",
+        "ok": false,
+        "latency_ms": 8.57
+      },
+      {
+        "task_id": "M07",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 9.2
+      },
+      {
+        "task_id": "M08",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 9.72
+      },
+      {
+        "task_id": "M09",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.32
+      },
+      {
+        "task_id": "M10",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.06
+      },
+      {
+        "task_id": "M11",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "REJECTED",
+        "ok": false,
+        "latency_ms": 8.92
+      },
+      {
+        "task_id": "M12",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 8.56
+      },
+      {
+        "task_id": "M13",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 9.04
+      },
+      {
+        "task_id": "M14",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.25
+      },
+      {
+        "task_id": "M15",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.5
+      },
+      {
+        "task_id": "M16",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "REJECTED",
+        "ok": false,
+        "latency_ms": 9.51
+      },
+      {
+        "task_id": "M17",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 8.63
+      },
+      {
+        "task_id": "M18",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 10.32
+      },
+      {
+        "task_id": "M19",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.98
+      },
+      {
+        "task_id": "M20",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.26
+      },
+      {
+        "task_id": "M21",
+        "category": "management",
+        "type": "lend",
+        "expected": "SUCCESS",
+        "got": "REJECTED",
+        "ok": false,
+        "latency_ms": 9.16
+      },
+      {
+        "task_id": "M22",
+        "category": "management",
+        "type": "lend_conflict",
+        "expected": "REJECTED",
+        "got": "REJECTED",
+        "ok": true,
+        "latency_ms": 9.17
+      },
+      {
+        "task_id": "M23",
+        "category": "management",
+        "type": "valuation",
+        "expected": "SUCCESS",
+        "got": "SUCCESS",
+        "ok": true,
+        "latency_ms": 8.77
+      },
+      {
+        "task_id": "M24",
+        "category": "management",
+        "type": "disposal_check",
+        "expected": "GUARDRAIL_BLOCKED",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.43
+      },
+      {
+        "task_id": "M25",
+        "category": "management",
+        "type": "disposal_draft",
+        "expected": "SUCCESS",
+        "got": "EXCEPTION:ValueError",
+        "ok": false,
+        "latency_ms": 4.63
+      },
+      {
+        "task_id": "P01",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 8.51
+      },
+      {
+        "task_id": "P02",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.76
+      },
+      {
+        "task_id": "P03",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.41
+      },
+      {
+        "task_id": "P04",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 10.16
+      },
+      {
+        "task_id": "P05",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.66
+      },
+      {
+        "task_id": "P06",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 13.56
+      },
+      {
+        "task_id": "P07",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 11.92
+      },
+      {
+        "task_id": "P08",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.98
+      },
+      {
+        "task_id": "P09",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.68
+      },
+      {
+        "task_id": "P10",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.16
+      },
+      {
+        "task_id": "P11",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 8.76
+      },
+      {
+        "task_id": "P12",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.35
+      },
+      {
+        "task_id": "P13",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.23
+      },
+      {
+        "task_id": "P14",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.85
+      },
+      {
+        "task_id": "P15",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.54
+      },
+      {
+        "task_id": "P16",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 8.7
+      },
+      {
+        "task_id": "P17",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.86
+      },
+      {
+        "task_id": "P18",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.47
+      },
+      {
+        "task_id": "P19",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.92
+      },
+      {
+        "task_id": "P20",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.65
+      },
+      {
+        "task_id": "P21",
+        "category": "procurement",
+        "type": "precheck_inventory",
+        "expected": "INVENTORY_SATISFIED",
+        "got": "INVENTORY_SATISFIED",
+        "ok": true,
+        "latency_ms": 8.49
+      },
+      {
+        "task_id": "P22",
+        "category": "procurement",
+        "type": "small_purchase",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.79
+      },
+      {
+        "task_id": "P23",
+        "category": "procurement",
+        "type": "split_order",
+        "expected": "GUARDRAIL_VIOLATION",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.86
+      },
+      {
+        "task_id": "P24",
+        "category": "procurement",
+        "type": "tender",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 8.59
+      },
+      {
+        "task_id": "P25",
+        "category": "procurement",
+        "type": "vendor_quotes",
+        "expected": "SUCCESS",
+        "got": "ERROR",
+        "ok": false,
+        "latency_ms": 9.43
+      }
+    ]
+  },
+  "pass_hat_4_fresh_with_history": 40.0
+}
