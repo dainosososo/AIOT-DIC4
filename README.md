@@ -31,7 +31,7 @@
 | `003_proposed_design` | PA–PM | III. Proposed Design（式 1–3、Fig. 1、Algorithm 1） | 完成，待組員審閱 |
 | `004_experiments` | Q–V | IV. Experiment（Table II、III） | 部分完成：baseline B1–B3 待實作 |
 | `005_conclusion` | W–Z | V. Conclusion | 完成 |
-| `006_references` | — | 12 筆參考文獻、投稿前檢查 | 待填作者資料 |
+| `006_references` | — | 12 筆參考文獻、投稿前檢查 | 系所/學校/email 已填，組員姓名待填 |
 
 ```bash
 npm install -g @fission-ai/openspec@latest
@@ -40,7 +40,7 @@ openspec validate --all --strict     # 7 passed, 0 failed
 python iceib-paper/check_a2z.py      # 38/38 A2Z 標記、5 個章節、結果表數字皆可追溯
 ```
 
-`check_a2z.py` 目前回傳 **2**（結構正確，但仍有投稿阻擋項：作者佔位字與 2 處 `\TBD`）。
+`check_a2z.py` 目前回傳 **2**（結構正確，但仍有投稿阻擋項：組員姓名佔位字與 2 處 `\TBD`）。
 
 ## ⚠️ 重要：實驗數字改為「實際執行」的結果
 
@@ -84,7 +84,8 @@ Claude Code (MCP host)
 
 ## 投稿前待辦
 
-- [ ] 填入 5 位作者英文姓名、系所、學校、城市、email（`main.tex` 的 `\author{}`）
+- [x] 系所、學校、城市、email：Dept. of CSE, National Chung Hsing University, Taichung
+- [ ] 填入 5 位組員英文姓名（`main.tex` 的 `\IEEEauthorblockN{}`）
 - [ ] 實作並量測 baseline B1–B3（或從論文中移除該列）
 - [ ] 核對參考文獻細節（特別是 arXiv:2601.00121 與 Řezníček & Kropík 一文的出處）
 - [ ] 組員審閱 Section III 的安全性性質（PM）
